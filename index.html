@@ -118,7 +118,7 @@
             'Tidy Desk Setup'
         ];
         const container = document.querySelector('.row');
-        for (let day = 1; day <= days; day++) {
+        for (let day = 0; day <= days; day++) {
             let box = document.createElement('div');
             box.className = 'col-md-4 day-box';
             box.innerHTML = `<h5 class="day-title">Day ${day}</h5><ul class="task-list">` +
