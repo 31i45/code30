@@ -110,18 +110,18 @@
         const days = 30;
         const tasks = [
             '健康的早餐',
-            'Consume ~10 Minutes Of Educational Content',
-            'Write Down Your Daily Tasks',
-            'Write At Least One Line Of Code',
-            'Post In Software Developer Academy',
-            'Exercise For 20 Minutes',
-            'Tidy Desk Setup'
+            '学习10分钟',
+            '写今日任务',
+            '写几行代码',
+            '发布在群里',
+            '锻炼20分钟',
+            '整理好桌面'
         ];
         const container = document.querySelector('.row');
         for (let day = 0; day <= days; day++) {
             let box = document.createElement('div');
             box.className = 'col-md-4 day-box';
-            box.innerHTML = `<h5 class="day-title">Day ${day}</h5><ul class="task-list">` +
+            box.innerHTML = `<h5 class="day-title">第${day}天</h5><ul class="task-list">` +
                 tasks.map(task => `<li><input type="checkbox" class="checkbox" id="day${day}-task${tasks.indexOf(task)}"><label for="day${day}-task${tasks.indexOf(task)}">${task}</label></li>`).join('') + '</ul>';
             container.appendChild(box);
         }
